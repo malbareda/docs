@@ -64,17 +64,16 @@ Un exemple seria TODO
 
 ### Cas individual
 
-Quan el problema no segueix cap dels casos següents, es pot fer cada cas individual. En aquest sentit, cada cas seria un fitxer d'entrada/sortida diferent. 
+Quan el problema no segueix cap dels casos anteriors, es pot fer cada cas individual. En aquest sentit, cada cas seria un fitxer d'entrada/sortida diferent. 
 Aquest cas s'ha d'indicar a l'hora de penjar els casos de prova!
 
 Un exemple seria TODO
 
 ### Cas Irregular
 
-És un problema que segueix la seguent casuística.
-"El primer nombre n indica el nombre de casos. Després hi haura n casos. En cada cas, el primer nombre, k, indica les linies que hi ha. Després hi haura k línies detallant el cas." La sortida SEMPRE es d'una sola linea.
+Quan el problema no segueix cap dels casos anteriors
 
-Aquest cas s'ha d'indicar a l'hora de penjar els casos de prova!
+**NO pots activar el sistema d'ajuda en un cas Irregular, i ha de tenir un Checker sense retroacció**
 
 Un exemple seria TODO
 
@@ -89,45 +88,60 @@ Això obrirà l'editor de problemes. Fes servir un codi (únic per a cada proble
 
 ![](http://i.imgur.com/bPlNZUR.png)
 
-Here you may edit your problem statement. The DMOJ features a rich Markdown-based syntax, with custom extensions for LaTeX-based display
-math, and Mathjax-based inline math. See [this template](https://raw.githubusercontent.com/DMOJ/docs/master/sample_files/problem_markdown_example.md.txt) for a full feature example (you may copy/paste
-its content into your editor).
+Aquí pots fer l'enunciat del problema. El jutge fa servir Markdown amb Latex. Tens un exemple de problema estàndard [aqui](https://github.com/malbareda/docs/blob/master/sample_files/problema_aireacondicionat.md.txt) i tens un template que mostra totes les opcions del Markdown [aqui](https://raw.githubusercontent.com/DMOJ/docs/master/sample_files/problem_markdown_example.md.txt).
 
-There are many options controlling your problem described in the editor, that you may use to customize the execution of your problem.
+En el 95% de problemes copiar l'estàndard i canviar el text i l'imatge serà més que suficient.
 
-Once you are done preparing your statement, click the _Save_ button, then scroll up to the top of the page and
-click the _View on Site_ button.
+Hi ha moltes opcions per a configurar el teu problema. Parlem de les més importants
+
+Publicy Visible: True
+Manually Managed: False (si no el jutge no funcionaria!)
+Problem Types: Els que creguis convenients. Un com a mínim. No afegeixis tipus nous
+Problem Categories: El que s'ha dit a la part de categories
+Allows Partial Points: True (si es fa servir la retroacció)
+Time Limit: No més de 5 segons
+Memory Limit: Ser generós. Si no la Màquina Virtual de Java es pot quedar sense espai. Els 64 MB que posen com exemple son suficients per el 99% de problemes (a no ser que vulguis fer un problema a on vulguis jugar amb el límit de memòria)
+
+
+Un cop acabat guarda el problema i el pots veure en el lloc
 
 ![](http://i.imgur.com/ZgO5xcY.png)
 
-## Editing Test Data
-Internally, the DMOJ uses a YAML-based format for describing problem data, which you may read about [here](/judge/problem_format.md).
-The site provides an interface for managing problem data, removing the need to drop down to YAML configuration for most problems.
+## Editar Casos de Prova
+Internament el jutge fa servir YAML, però hi ha una interficie que et genera el YAML automàticament. Pots llegir més sobre el YAML aquí [here](/judge/problem_format.md).
 
-On the problem page, click the _Edit test data_ link, which will open up the test data editor.
+En la pàgina del problema, un cop creat, ves a  _Edit test data_ que obrirà l'editor dels casos de prova
 
 ![](http://i.imgur.com/eDWEEJk.png)
 
-In the editor, you must first upload a zip archive containing the input/output data used for your problem. The typical convention
-is to use text files ending with a `.in` extension for input files, and `.out` for output files, with the 
-testcase number embedded in the filename.
+En l'editor has de pujar un arxiu zip que contingui els casos de prova. Cada cas de prova son dos arxius de text, un amb l'entrada i un amb la sortida. Generalment voldras un cas de prova (i per tant una parella d'arxius diferent) per cada 10 casos.
 
-For example, for a problem with a code of `testp1`, a the first test case would be named `testp1.1.in`,
-with an output file `testp1.1.out`.
+La convenció es que els arxius d'entrada acabin amb `.in` i els de sortida amb `.out` però **no** és necessari.
 
-Using this format is **not** necessary &mdash; the judge will accept any filenames &mdash; but using it will allow the test data
-editor to autocomplete paths, saving some manual input.
+Per exemple, un problema amb codi de `testp1`, podria tenir 4 arxius en el zip, `testp1.1.in`,`testp1.1.out`, `testp1.2.in`,`testp1.2.out` .
 
 ![](http://i.imgur.com/w5ytsgi.png)
 
-There are many other options, but for most problems only one more is necessary: the per-case point value. If partial points
-are enabled in the problem statement editor, then a user's score on the problem is equal to the 
-sum of the point values of the cases they got right divided by the total sum of case point values, multiplied by the number of
-points the problem is worth.
+En Checker tens 3 opcions
 
-For example, if your problem is worth 100 points and has 3 cases weighted 1/2/7 points respectively, a user who gets the first
-two cases correct and then fails the last one will have a score of (1 + 2) / (1 + 2 + 7) &times; 100 = 30 points, out of 100.
+Standard: Si vols desactivar totalment el sistema d'ajuda o tens casos de prova amb més de 10.000 casos
+Linea a Linea (només profes): Si vols que els professors puguin veure els errors i l'entrada, o si els teus casos de prova són Irregulars com s'explica més amunt
+Linea a Linea amb Retroacció: Si vols activar el Sistema d'Ajuda. Els problemes haurien de tenir aquest Checker gairebé sempre.
 
-## Submitting a Problem
-After you have created your test data, you should head back to the problem and click the _Submit solution_ button. If at any point in
-time you need to update your data, you may do so from the test data editor, and it will update automatically.
+A Format de Casos de Prova has d'activar un dels següents
+
+Estàndard/fixe: Si el teu format és Estàndard o Relació Fixa
+STOP al final: Si el teu format és STOP al final
+Linies per cada cas: Si el teu format és Cada cas té linies indicades
+Casos individuals: Si el teu format és Cas individual
+
+**seleccionar el format incorrecte farà que el sistema d'ajuda dongui errors!**
+
+Has d'afegir tants casos de prova (add case) com fitxers tinguis.
+
+Per cada cas de proves hauras d'afegir una puntuació per a que es pugui calcular parcialment.
+
+D'aquesta forma, si el teu problema val 20 punts i té 3 casos que pesen 1, 2 i 7 punts, un ususari que tingui els primers casos correctes tindrà (1 + 2) / (1 + 2 + 7) * 20 punts.
+
+## Enviar el Problema
+Un cop has acabat, pots donar a Submit i el problema quedarà obert. Recorda que pots editar-lo si hi ha cap error i que pots fer servir els comentaris per fer qualsevol aclariment.
