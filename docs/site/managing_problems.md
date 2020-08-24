@@ -124,16 +124,16 @@ Per exemple, un problema amb codi de `testp1`, podria tenir 4 arxius en el zip, 
 
 En Checker tens 3 opcions
 
-Standard: Si vols desactivar totalment el sistema d'ajuda o tens casos de prova amb més de 10.000 casos
-Linea a Linea (només profes): Si vols que els professors puguin veure els errors i l'entrada, o si els teus casos de prova són Irregulars com s'explica més amunt
-Linea a Linea amb Retroacció: Si vols activar el Sistema d'Ajuda. Els problemes haurien de tenir aquest Checker gairebé sempre.
+- Standard: Si vols desactivar totalment el sistema d'ajuda o tens casos de prova amb més de 10.000 casos
+- Linea a Linea (només profes): Si vols que els professors puguin veure els errors i l'entrada, o si els teus casos de prova són Irregulars com s'explica més amunt
+- Linea a Linea amb Retroacció: Si vols activar el Sistema d'Ajuda. Els problemes haurien de tenir aquest Checker gairebé sempre.
 
 A Format de Casos de Prova has d'activar un dels següents
 
-Estàndard/fixe: Si el teu format és Estàndard o Relació Fixa
-STOP al final: Si el teu format és STOP al final
-Linies per cada cas: Si el teu format és Cada cas té linies indicades
-Casos individuals: Si el teu format és Cas individual
+- Estàndard/fixe: Si el teu format és Estàndard o Relació Fixa
+- STOP al final: Si el teu format és STOP al final
+- Linies per cada cas: Si el teu format és Cada cas té linies indicades
+- Casos individuals: Si el teu format és Cas individual
 
 **seleccionar el format incorrecte farà que el sistema d'ajuda dongui errors!**
 
