@@ -3,6 +3,22 @@ Aquesta pàgina et guiarà a l'hora de Crear i Afegir nous problemes.
 
 # Crear nous problemes
 
+## Categoria
+
+Pensa en la Categoria que vols posar al problema. 
+
+Primers passos es per problemes que es puguin resoldre sense bucles (per tant, han de tenir casos de prova individuals!). 
+Iniciació per problemes molt senzills que no tinguin cap estructura de dades, com arrays.
+Aprenentatge és si el problema es pot resoldre amb relativament poques linies, va d'un sol concepte, i la dificultat del problema està més en l'implementació que no en pensar el que s'ha de fer. Aprenentatge poden ser casos molt bàsics (invertir una string) o força complexes (implementar Dijkstra). Sempre que es compleixin aquestes condicions. Aprenentatge seria el típic exercici de 2-3p a un examen.
+Competitius son problemes que podrien estar en un concurs. Tenen un enunciat, s'ha d'interpretar, s'ha de pensar, s'ha de resoldre, poden haver-hi més d'un concepte, etc. La dificultat pot ser molt variable.
+
+No feu servir la resta de les categories. Especialment no feu servir la categoria Negra sense consultar-ho amb l'admin (Marc) abans
+
+## Punts
+
+Decidir els punts del problema és una de les parts més dificils de fer el problema. Mira problemes similars en dificultat al teu i posa uns punts equivalents. La majoria de problemes tindran entre 3 i 15 punts. Pensa molt detingudament si vas a posar més de 15 punts a un problema. 
+
+
 ## Nombre de casos de Prova
 
 Idealment un problema hauria de tenir uns 15-20 casos de prova força exhaustius, dels quals uns 3-5 haurien de ser públics (i per tant penjats a l'enunciat) i la resta privats. Haurien d'estar dividits en un mínim de 2 parelles d'arxius entrada/sortida, un per als casos públics i un per als casos privats. Idealment s'hauria de tenir una parella per als públics, i després una altra per cada 10 casos privats. Si es fan casos amb molts casos de prova (més de 10.000) no s'hauria de fer servir la retroacció per no col·lapsar el jutge ni les pantalles dels docents que mirin enviaments al problema.
@@ -62,9 +78,10 @@ Aquest cas s'ha d'indicar a l'hora de penjar els casos de prova!
 
 Un exemple seria TODO
 
-## Adding a Problem
-To start, head to [dmoj.ca/admin](https://dmoj.ca/admin), and use your credentials to log in.
-Once there, click the _Add_ button on the _Problems_ menu.
+
+# Afegir un Problema
+ves a [dmoj.ca/admin](https://dmoj.ca/admin), i fes servir les teves credencials.
+Aleshores, fes click al botó _Add_ en el menú _Problems_ 
 
 ![](http://i.imgur.com/RFPQaUi.png)
 
