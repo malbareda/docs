@@ -5,7 +5,8 @@ Ets Juan Carlos, Secretari de l’Institut Sabadell. La teva tasca consisteix en
 
 ## Entrada
 
-La primera línia indica els casos de prova a considerar. Cada cas de prova compta amb un nombre enter n que indica els graus de les varilles de l’aire condicionat. Com que els alumnes van jugant a encendre i apagar l’aire perque son així de llestos, les varilles poden estar a graus superior a 360 perquè han fet una volta sencera.
+<!-- Si vols semblar un doctor en matemàtiques pots fer servir LaTeX rodejant l'expressio amb tildes ~ . Pots mirar coses més complexes a l'altre exemple o a la documentacio de mathoid -->
+La primera línia indica els casos de prova a considerar. Cada cas de prova compta amb un nombre enter ~N~ tal que ~-2^{31} \le N \le 2^{31}~ que indica els graus de les varilles de l’aire condicionat. Com que els alumnes van jugant a encendre i apagar l’aire perque son així de llestos, les varilles poden estar a graus superior a 360 perquè han fet una volta sencera.
 
 ## Sortida
 
