@@ -1,7 +1,66 @@
-# Managing Problems Through the Site Interface
+Aquesta pàgina et guiarà a l'hora de Crear i Afegir nous problemes.
 
-The DMOJ comes with an online interface for creating and editing problem statements as well as data.
-This guide is intended as an introduction to using these features for creating your own problems.
+
+# Crear nous problemes
+
+## Nombre de casos de Prova
+
+Idealment un problema hauria de tenir uns 15-20 casos de prova força exhaustius, dels quals uns 3-5 haurien de ser públics (i per tant penjats a l'enunciat) i la resta privats. Haurien d'estar dividits en un mínim de 2 parelles d'arxius entrada/sortida, un per als casos públics i un per als casos privats. Idealment s'hauria de tenir una parella per als públics, i després una altra per cada 10 casos privats. Si es fan casos amb molts casos de prova (més de 10.000) no s'hauria de fer servir la retroacció per no col·lapsar el jutge ni les pantalles dels docents que mirin enviaments al problema.
+
+## Format dels casos de Prova
+
+El jutge bàsicament el que fa es canviar l'entrada i sortida estandard del problema amb fitxers i executar, i després comparar el fitxer de sortida amb el fitxer de respostes esperades. Això fa que realment el jutge NO sap quina entrada es correspón a cada sortida. Per tal de que ho sàpiga (i per tant, pugui informar a l'usuari de quina entrada té malament) s'han de fer els problemes amb un format especial.
+
+Formats acceptats:
+
+### Estàndard
+
+una línea d'entrada es correspón a una línea de sortida. Per tant, els casos de prova tindran n línies de sortida i n o n+1 línies d'entrada. el +1 es degut a que la majoria de problemes solen tenir una primera linea que indica quants casos hi ha.
+
+Aquest cas el tracta el jutge automàticament i no cal fer res
+
+Un exemple seria TODO
+
+### Relació fixa
+
+n línees d'entrada es correspón a m línees de sortida, sent n i m valors fixos. Per exemple, cada cas son sempre 2 linees d'entrada i 1 de sortida, o 5 i 2, o 1 i 4. També es te en consideració el +1 per la primera linea que indica quants casos hi ha
+
+Aquest cas el tracta el jutge automàticament i no cal fer res
+
+Un exemple seria TODO
+
+### STOP al final
+
+És exactament igual que l'estàndard o la relació fixa, pero en comptes de tenir una linea al principi que indica quants casos hi ha, hi ha una al final amb una entrada ja acordada que indica que s'acaba l'execució i no s'ha de processar
+
+Aquest cas s'ha d'indicar a l'hora de penjar els casos de prova!
+
+Un exemple seria TODO
+
+### Cada cas té linies indicades
+
+És un problema que segueix la seguent casuística.
+"El primer nombre n indica el nombre de casos. Després hi haura n casos. En cada cas, el primer nombre, k, indica les linies que hi ha. Després hi haura k línies detallant el cas." La sortida SEMPRE es d'una sola linea.
+
+Aquest cas s'ha d'indicar a l'hora de penjar els casos de prova!
+
+Un exemple seria TODO
+
+### Cas individual
+
+Quan el problema no segueix cap dels casos següents, es pot fer cada cas individual. En aquest sentit, cada cas seria un fitxer d'entrada/sortida diferent. 
+Aquest cas s'ha d'indicar a l'hora de penjar els casos de prova!
+
+Un exemple seria TODO
+
+### Cas Irregular
+
+És un problema que segueix la seguent casuística.
+"El primer nombre n indica el nombre de casos. Després hi haura n casos. En cada cas, el primer nombre, k, indica les linies que hi ha. Després hi haura k línies detallant el cas." La sortida SEMPRE es d'una sola linea.
+
+Aquest cas s'ha d'indicar a l'hora de penjar els casos de prova!
+
+Un exemple seria TODO
 
 ## Adding a Problem
 To start, head to [dmoj.ca/admin](https://dmoj.ca/admin), and use your credentials to log in.
