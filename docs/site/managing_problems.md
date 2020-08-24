@@ -85,8 +85,7 @@ Aleshores, fes click al botó _Add_ en el menú _Problems_
 
 ![](http://i.imgur.com/RFPQaUi.png)
 
-This is will open up the main problem editor. To start, you should provide a problem code (must be unique site-wide),
-and a title for your problem. **Make sure to mark yourself as an author**, as otherwise you will be locked out of your problem.
+Això obrirà l'editor de problemes. Fes servir un codi (únic per a cada problema) i un títol per al problema. **AFEGEIX-TE COM A AUTOR O NO PODRAS EDITAR EL PROBLEMA**
 
 ![](http://i.imgur.com/bPlNZUR.png)
 
