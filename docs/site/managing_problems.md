@@ -39,7 +39,9 @@ Un exemple seria TODO
 
 ### Relació fixa
 
-n línees d'entrada es correspón a m línees de sortida, sent n i m valors fixos. Per exemple, cada cas son sempre 2 linees d'entrada i 1 de sortida, o 5 i 2, o 1 i 4. També es te en consideració el +1 per la primera linea que indica quants casos hi ha
+n línees d'entrada es correspón a m línees de sortida, sent n i m valors fixos i un dels dos sent 1. Per exemple, cada cas son sempre 2 linees d'entrada i 1 de sortida, o 5 i 1, o 1 i 4. També es te en consideració el +1 per la primera linea que indica quants casos hi ha.
+
+No funciona si tant l'entrada com la sortida son més d'una línea. si son 4 linies cada entrada i 2 cada sortida el programa no té forma de saber si son 4-2 o 2-1. Com a consell intenteu que la sortida sigui sempre una línea, excepte en exercicis de matrius.
 
 Aquest cas el tracta el jutge automàticament i no cal fer res
 
