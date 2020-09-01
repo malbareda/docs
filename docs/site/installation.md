@@ -1,11 +1,11 @@
 ## Installing the prerequisites
 
 ```shell-session
-$ apt update
-$ apt install git gcc g++ make python3-dev python3-pip libxml2-dev libxslt1-dev zlib1g-dev gettext curl redis-server
+$ sudo apt update
+$ sudo apt install git gcc g++ make python3-dev python3-pip libxml2-dev libxslt1-dev zlib1g-dev gettext curl redis-server python3-venv
 $ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-$ apt install nodejs
-$ npm install -g sass postcss-cli autoprefixer
+$ sudo apt install nodejs
+$ sudo npm install -g sass postcss-cli autoprefixer
 ```
 
 ## Creating the database
@@ -15,7 +15,10 @@ Next, we will set up the database using MariaDB. The DMOJ is only tested to work
 When asked, you should select the latest MariaDB version.
 
 ```shell-session
-$ apt update
+$ sudo apt-get install software-properties-common
+$ sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+$ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mirror.nodesdirect.com/mariadb/repo/10.5/ubuntu focal main'
+$ sudo apt update
 $ apt install mariadb-server libmysqlclient-dev
 ```
 
@@ -46,9 +49,8 @@ You should see `(dmojsite)` prepended to your shell. Henceforth, `(dmojsite)` co
 Now, fetch the site source code. If you plan to install a judge [from PyPI](https://pypi.org/project/dmoj/), check out a matching version of the site repository. For example, for judge v2.1.0:
 
 ```shell-session
-(dmojsite) $ git clone https://github.com/DMOJ/site.git
+(dmojsite) $ git clone https://github.com/malbareda/educational-online-judge
 (dmojsite) $ cd site
-(dmojsite) $ git checkout v2.1.0  # only if planning to install a judge from PyPI, otherwise skip this step
 (dmojsite) $ git submodule init
 (dmojsite) $ git submodule update
 ```
@@ -58,6 +60,7 @@ Install Python dependencies into the virtual environment.
 ```shell-session
 (dmojsite) $ pip3 install -r requirements.txt
 (dmojsite) $ pip3 install mysqlclient
+(dmojsite) $ pip3 install redis
 ```
 
 You will now need to configure `dmoj/local_settings.py`. You should make a copy [of this sample settings file](https://github.com/DMOJ/docs/blob/master/sample_files/local_settings.py) and read through it, making changes as necessary. Most importantly, you will want to update MariaDB credentials.
