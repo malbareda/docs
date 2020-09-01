@@ -1,11 +1,11 @@
-<!-- Començar amb # fa titols grans, ## titols mitjans,  ### títols petits -->
+Començar amb # fa titols grans, ## titols mitjans,  ### títols petits 
 
 <img src="https://static.bricomart.es/e/f/c/b/efcb361bd8fea2a1a18753154e0d1e15bc9fd0a7_10708852_fo_01_web.jpg" style="float:right" alt="aireacondicionat" width="200" >
 Ets Juan Carlos, Secretari de l’Institut Sabadell. La teva tasca consisteix en cercar les aules amb l’Aire condicionat encès, i fer una ​“reflexió”​ als alumnes. (bronca). Per saber si l’aire estàencès, mires desde l’aula del costat, posant-te de puntetes, l'inclinació de les varilles de l’aire. Si l’aire està tancat, lesv arilles estan inclinades 0º o 180º. Qualsevol altre grau es que estan obertes i l’aire està encès.
 
 ## Entrada
 
-<!-- Si vols semblar un doctor en matemàtiques pots fer servir LaTeX rodejant l'expressio amb tildes ~ . Pots mirar coses més complexes a l'altre exemple o a la documentacio de mathoid -->
+Si vols semblar un doctor en matemàtiques pots fer servir LaTeX rodejant l'expressio amb tildes ~ . Pots mirar coses més complexes a l'altre exemple o a la documentacio de mathoid
 La primera línia indica els casos de prova a considerar. Cada cas de prova compta amb un nombre enter ~N~ tal que ~-2^{31} \le N \le 2^{31}~ que indica els graus de les varilles de l’aire condicionat. Com que els alumnes van jugant a encendre i apagar l’aire perque son així de llestos, les varilles poden estar a graus superior a 360 perquè han fet una volta sencera.
 
 ## Sortida
@@ -15,7 +15,7 @@ Si l’aire està apagat, es respondrà “OK”. Si està encès, es respondrà
 
 ## Exemple d'Entrada
 
-<!-- ```  els tres accents oberts marquen l'inici i final d'un bloc de codi. Els blocs de codi es veuen diferent i es poden copiar -->
+els tres accents oberts marquen l'inici i final d'un bloc de codi. Els blocs de codi es veuen diferent i es poden copiar
 
 ```
 1
