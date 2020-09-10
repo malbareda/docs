@@ -143,4 +143,4 @@ Per cada cas de proves hauras d'afegir una puntuació per a que es pugui calcula
 D'aquesta forma, si el teu problema val 20 punts i té 3 casos que pesen 1, 2 i 7 punts, un ususari que tingui els primers casos correctes tindrà (1 + 2) / (1 + 2 + 7) * 20 punts.
 
 ## Enviar el Problema
-Un cop has acabat, pots donar a Submit i el problema quedarà obert. Recorda que pots editar-lo si hi ha cap error i que pots fer servir els comentaris per fer qualsevol aclariment.
+Un cop has acabat, pots donar a Submit i el problema quedarà obert. Recorda que pots editar-lo si hi ha cap error i que pots fer servir els comentaris per fer qualsevol aclariment. El problema no serà públic fins que un veterà l'hagi verificat.
