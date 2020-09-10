@@ -35,7 +35,7 @@ una línea d'entrada es correspón a una línea de sortida. Per tant, els casos 
 
 Aquest cas el tracta el jutge automàticament i no cal fer res
 
-Un exemple seria TODO
+Un exemple seria https://joder.ga/problem/compteambelveri  (1 entrada / 1 sortida)  
 
 ### Relació fixa
 
@@ -45,7 +45,7 @@ No funciona si tant l'entrada com la sortida son més d'una línea. si son 4 lin
 
 Aquest cas el tracta el jutge automàticament i no cal fer res
 
-Un exemple seria TODO
+Un exemple seria https://joder.ga/problem/colarse (3 entrades / 1 sortida)
 
 ### STOP al final
 
@@ -53,7 +53,7 @@ Un exemple seria TODO
 
 Aquest cas s'ha d'indicar a l'hora de penjar els casos de prova!
 
-Un exemple seria TODO
+Un exemple seria https://joder.ga/problem/7segments
 
 ### Cada cas té linies indicades
 
@@ -62,23 +62,20 @@ Un exemple seria TODO
 
 Aquest cas s'ha d'indicar a l'hora de penjar els casos de prova!
 
-Un exemple seria TODO
+Un exemple seria https://joder.ga/problem/pozoluna (molt clar)  o https://joder.ga/problem/torniquet (hi ha 2 números a la línea pero el que val per al sistema d'ajuda és el primer) o https://joder.ga/problem/buscamines (aquest és de matrius i bàsicament m'obliga a crear el número L per al sistema d'ajuda)
 
 ### Cas individual
 
 Quan el problema no segueix cap dels casos anteriors, es pot fer cada cas individual. En aquest sentit, cada cas seria un fitxer d'entrada/sortida diferent. 
 Aquest cas s'ha d'indicar a l'hora de penjar els casos de prova!
 
-Un exemple seria TODO
+Un exemple seria https://joder.ga/problem/barrethogwarts (és un problema massa introductori per tenir bucle d'entrada i s'ha de fer en casos anteriors) https://joder.ga/problem/blackfriday (els exercicis de matrius solen donar problemes) o https://joder.ga/problem/consellescolar (els problemes a on el nombre de línies de la sortida es variable sempre son casos irregulars)
 
 ### Cas Irregular
 
 Quan el problema no segueix cap dels casos anteriors
 
-**NO pots activar el sistema d'ajuda en un cas Irregular, i ha de tenir un Checker sense retroacció**
-
-Un exemple seria TODO
-
+**NO pots activar el sistema d'ajuda en un cas Irregular, i ha de tenir un Checker sense retroacció (generalment el de només profes)**
 
 # Afegir un Problema
 ves a [dmoj.ca/admin](https://dmoj.ca/admin), i fes servir les teves credencials.
