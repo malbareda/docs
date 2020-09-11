@@ -107,7 +107,7 @@ Un cop acabat guarda el problema i el pots veure en el lloc
 ![](http://i.imgur.com/ZgO5xcY.png)
 
 ## Editar Casos de Prova
-Internament el jutge fa servir YAML, però hi ha una interficie que et genera el YAML automàticament. Pots llegir més sobre el YAML aquí [here](/judge/problem_format.md).
+Internament el jutge fa servir YAML, però hi ha una interficie que et genera el YAML automàticament. Pots llegir més sobre el YAML [aqui](/problem_format/problem_format.md).
 
 En la pàgina del problema, un cop creat, ves a  _Edit test data_ que obrirà l'editor dels casos de prova
 
